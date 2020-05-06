@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootDemoApplication {
 
     public static void main(String[] args) {
-        // As the tls/ssl communication was not happening correctly via java code, hence added cde to trust all certificates to bypass tls
+        // As the tls/ssl communication was not happening correctly via java code, hence added code to trust all certificates to bypass tls
         SSLUtilities.trustAllHttpsCertificates();
         SpringApplication.run(SpringBootDemoApplication.class, args);
     }
